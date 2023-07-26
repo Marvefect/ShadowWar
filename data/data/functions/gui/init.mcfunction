@@ -1,1 +1,1 @@
-function data:gui/weapon
+function data:gui/armory
