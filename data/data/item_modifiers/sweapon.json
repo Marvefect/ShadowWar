@@ -1,0 +1,82 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      [
+        {
+          "text": "Ammo: ",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "S.Ammo"
+          },
+          "bold": true,
+          "italic": false
+        },
+        {
+          "text": " / ",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "S.MaxAmmo"
+          },
+          "bold": true,
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "Reload Time: ",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "S.ReloadTime"
+          },
+          "bold": true,
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "Damage: ",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "S.Damage"
+          },
+          "bold": true,
+          "italic": false
+        }
+      ],
+      [
+        {
+          "text": "Firerate: ",
+          "bold": true,
+          "italic": false
+        },
+        {
+          "score": {
+            "name": "@s",
+            "objective": "S.Firerate"
+          },
+          "bold": true,
+          "italic": false
+        }
+      ]
+    ],
+    "replace": false
+  }
+]

@@ -1,0 +1,14 @@
+{
+    "type": "data:map",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "biome": "data:map",
+        "lakes": false,
+        "features": false,
+        "layers": [],
+        "structure_overrides": []
+      }
+    }
+  }
+  
