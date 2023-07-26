@@ -15,6 +15,9 @@ execute in data:map run fill -6 1 -27 -6 3 -29 light_blue_stained_glass
 execute in data:map run fill 6 1 -27 6 3 -29 light_blue_stained_glass
 execute in data:map run fill -6 1 27 -6 3 29 red_stained_glass
 execute in data:map run fill 6 1 27 6 3 29 red_stained_glass
+execute in data:map run fill -31 1 14 -29 3 14 light_gray_concrete
+execute in data:map run fill -14 1 21 -12 3 21 light_gray_concrete
+execute in data:map run fill 14 1 28 16 3 28 light_gray_concrete
 scoreboard players set Round GameStatus 0
 scoreboard players set Round TimeLeft 250
 scoreboard players set Hack TimeLeft 45

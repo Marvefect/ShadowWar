@@ -9,4 +9,6 @@ execute as @a[team=Blue] run tag @s remove MatchMaking
 scoreboard players set Red RoundWins 0
 scoreboard players set Blue RoundWins 0
 
-function data:rounds/start
+execute in data:map run tp @a[team=Red] 0.0 5.0 28.0
+execute in data:map run tp @a[team=Blue] 0.0 5.0 -28.0
+execute in data:map run function data:rounds/start
