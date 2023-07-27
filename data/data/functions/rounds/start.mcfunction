@@ -21,8 +21,8 @@ execute in data:map run fill 14 1 28 16 3 28 light_gray_concrete
 scoreboard players set Round GameStatus 0
 scoreboard players set Round TimeLeft 250
 scoreboard players set Hack TimeLeft 45
-execute as @a run tag @s remove EqS1used
-execute as @a run tag @s remove EqS2used
+tag @a remove EqS1used
+tag @a remove EqS2used
 execute in data:map run tp @a[team=Red] 0.0 5.0 28.0
 execute in data:map run tp @a[team=Blue] 0.0 5.0 -28.0
 scoreboard players set @a Health 1000
