@@ -11,11 +11,11 @@ execute if score Blue RoundWins matches 3 in overworld run tp @a 0 -50 0
 execute if score Red RoundWins matches 3 in overworld run scoreboard players set Red RoundWins 0
 execute if score Blue RoundWins matches 3 in overworld run scoreboard players set Blue RoundWins 0
 
+bossbar set minecraft:1 players @a
 execute if score Round GameStatus matches 0 run bossbar set minecraft:1 max 240
 execute if score Round GameStatus matches 1..2 run bossbar set minecraft:1 max 45
 execute if score Round GameStatus matches 0 run bossbar set minecraft:1 color white
 execute if score Round GameStatus matches 1..2 run bossbar set minecraft:1 color red
-bossbar set minecraft:1 players @a
 execute if score Round GameStatus matches 0 if score Round Time matches 19.. unless score Round TimeLeft matches ..-1 run scoreboard players remove Round TimeLeft 1
 execute if score Round GameStatus matches 1..2 if score Round Time matches 19.. unless score Hack TimeLeft matches ..-1 run scoreboard players remove Hack TimeLeft 1
 execute if score Round GameStatus matches 0 store result bossbar minecraft:1 value run scoreboard players get Round TimeLeft

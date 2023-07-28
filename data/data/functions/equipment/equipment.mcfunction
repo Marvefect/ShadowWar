@@ -17,4 +17,4 @@ execute as @a[scores={EquipmentSlot1=4},tag=!EqS1used] run item replace entity @
 execute as @a[scores={EquipmentSlot2=4},tag=!EqS2used] run item replace entity @s hotbar.3 with light_gray_shulker_box{Interaction:1,display:{Name:'{"text":"Smoke Grenade","bold":true}'},HideFlags:6} 1
 
 execute as @a[scores={EquipmentSlot1=5},tag=!EqS1used] run item replace entity @s hotbar.2 with tnt{Interaction:1,display:{Name:'{"text":"Shaped Charge","bold":true}'},HideFlags:6} 1
-execute as @a[scores={EquipmentSlot2=5},tag=!EqS2used] run item replace entity @s hotbar.3 with tnt{display:{Name:'{"text":"Shaped Charge","bold":true}'},HideFlags:6} 1
+execute as @a[scores={EquipmentSlot2=5},tag=!EqS2used] run item replace entity @s hotbar.3 with tnt{Interaction:1,display:{Name:'{"text":"Shaped Charge","bold":true}'},HideFlags:6} 1
