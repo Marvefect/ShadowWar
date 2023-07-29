@@ -25,4 +25,7 @@ execute as @e[type=interaction,tag=EqS2N3] at @s if data entity @s interaction a
 execute as @e[type=interaction,tag=EqS2N4] at @s if data entity @s interaction as @p[distance=..2,scores={Level=15..}] run scoreboard players set @s EquipmentSlot2 4
 execute as @e[type=interaction,tag=EqS2N5] at @s if data entity @s interaction as @p[distance=..2,scores={Level=15..}] run scoreboard players set @s EquipmentSlot2 5
 
+execute as @e[type=interaction,tag=Armory] at @s if data entity @s interaction as @p[distance=..2] run tag @s remove EqS1used
+execute as @e[type=interaction,tag=Armory] at @s if data entity @s interaction as @p[distance=..2] run tag @s remove EqS2used
+
 execute as @e[type=interaction,tag=Armory] at @s if entity @p[distance=..2] run data remove entity @s interaction

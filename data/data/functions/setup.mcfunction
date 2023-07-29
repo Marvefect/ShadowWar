@@ -28,32 +28,40 @@ scoreboard objectives add PlayerCount dummy
 scoreboard objectives add GameStatus dummy
 scoreboard objectives add Experience dummy
 scoreboard objectives add Level level
+
+scoreboard objectives add Motion dummy
+scoreboard objectives add x1 dummy
+scoreboard objectives add y1 dummy
+scoreboard objectives add z1 dummy
+scoreboard objectives add x2 dummy
+scoreboard objectives add y2 dummy
+scoreboard objectives add z2 dummy
 bossbar add 1 {"text": "Rounds"}
 
 kill @e[type=interaction,tag=Armory]
-summon interaction 13.0 -59.0 10.5 {Tags:[Primary1,Armory]}
-summon interaction 13.0 -59.0 12.5 {Tags:[Primary2,Armory]}
-summon interaction 13.0 -59.0 14.5 {Tags:[Primary3,Armory]}
-summon interaction 13.0 -59.0 16.5 {Tags:[Primary4,Armory]} 
+execute in overworld run summon interaction 13.0 -59.0 10.5 {Tags:[Primary1,Armory]}
+execute in overworld run summon interaction 13.0 -59.0 12.5 {Tags:[Primary2,Armory]}
+execute in overworld run summon interaction 13.0 -59.0 14.5 {Tags:[Primary3,Armory]}
+execute in overworld run summon interaction 13.0 -59.0 16.5 {Tags:[Primary4,Armory]} 
 
-summon interaction 6.0 -59.0 22.5 {Tags:[Secondary1,Armory]}
-summon interaction 6.0 -59.0 20.5 {Tags:[Secondary2,Armory]}
-summon interaction 6.0 -59.0 18.5 {Tags:[Secondary3,Armory]}
+execute in overworld run summon interaction 6.0 -59.0 22.5 {Tags:[Secondary1,Armory]}
+execute in overworld run summon interaction 6.0 -59.0 20.5 {Tags:[Secondary2,Armory]}
+execute in overworld run summon interaction 6.0 -59.0 18.5 {Tags:[Secondary3,Armory]}
 
-summon interaction 2.0 -59.0 22.5 {Tags:[Armor0,Armory]}
-summon interaction 2.0 -59.0 20.5 {Tags:[Armor1,Armory]}
-summon interaction 2.0 -59.0 18.5 {Tags:[Armor2,Armory]}
-summon interaction 2.0 -59.0 16.5 {Tags:[Armor3,Armory]}
-summon interaction 2.0 -59.0 14.5 {Tags:[Armor4,Armory]}
+execute in overworld run summon interaction 2.0 -59.0 22.5 {Tags:[Armor0,Armory]}
+execute in overworld run summon interaction 2.0 -59.0 20.5 {Tags:[Armor1,Armory]}
+execute in overworld run summon interaction 2.0 -59.0 18.5 {Tags:[Armor2,Armory]}
+execute in overworld run summon interaction 2.0 -59.0 16.5 {Tags:[Armor3,Armory]}
+execute in overworld run summon interaction 2.0 -59.0 14.5 {Tags:[Armor4,Armory]}
 
-summon interaction 1.0 -59.0 14.5 {Tags:[EqS1N1,Armory]}
-summon interaction 1.0 -59.0 16.5 {Tags:[EqS1N2,Armory]}
-summon interaction 1.0 -59.0 18.5 {Tags:[EqS1N3,Armory]}
-summon interaction 1.0 -59.0 20.5 {Tags:[EqS1N4,Armory]}
-summon interaction 1.0 -59.0 22.5 {Tags:[EqS1N5,Armory]}
+execute in overworld run summon interaction 1.0 -59.0 14.5 {Tags:[EqS1N1,Armory]}
+execute in overworld run summon interaction 1.0 -59.0 16.5 {Tags:[EqS1N2,Armory]}
+execute in overworld run summon interaction 1.0 -59.0 18.5 {Tags:[EqS1N3,Armory]}
+execute in overworld run summon interaction 1.0 -59.0 20.5 {Tags:[EqS1N4,Armory]}
+execute in overworld run summon interaction 1.0 -59.0 22.5 {Tags:[EqS1N5,Armory]}
 
-summon interaction -7.0 -59.0 14.5 {Tags:[EqS2N1,Armory]}
-summon interaction -7.0 -59.0 16.5 {Tags:[EqS2N2,Armory]}
-summon interaction -7.0 -59.0 18.5 {Tags:[EqS2N3,Armory]}
-summon interaction -7.0 -59.0 20.5 {Tags:[EqS2N4,Armory]}
-summon interaction -7.0 -59.0 22.5 {Tags:[EqS2N5,Armory]}
+execute in overworld run summon interaction -7.0 -59.0 14.5 {Tags:[EqS2N1,Armory]}
+execute in overworld run summon interaction -7.0 -59.0 16.5 {Tags:[EqS2N2,Armory]}
+execute in overworld run summon interaction -7.0 -59.0 18.5 {Tags:[EqS2N3,Armory]}
+execute in overworld run summon interaction -7.0 -59.0 20.5 {Tags:[EqS2N4,Armory]}
+execute in overworld run summon interaction -7.0 -59.0 22.5 {Tags:[EqS2N5,Armory]}
