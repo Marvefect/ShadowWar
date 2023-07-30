@@ -33,9 +33,7 @@ scoreboard objectives add Motion dummy
 scoreboard objectives add x1 dummy
 scoreboard objectives add y1 dummy
 scoreboard objectives add z1 dummy
-scoreboard objectives add x2 dummy
-scoreboard objectives add y2 dummy
-scoreboard objectives add z2 dummy
+scoreboard objectives add Numbers dummy
 bossbar add 1 {"text": "Rounds"}
 
 kill @e[type=interaction,tag=Armory]
