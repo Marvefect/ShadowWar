@@ -24,10 +24,10 @@ execute in data:map store result score Red PlayerCount if entity @a[team=Red,dis
 execute in data:map store result score Blue PlayerCount if entity @a[team=Blue,distance=..100]
 execute if score Round GameStatus matches 0 run bossbar set minecraft:1 name [{"score":{"name": "Red","objective": "RoundWins"},"color": "red"},{"text": " 🏆 | 🕑 ","color": "white"},{"score":{"name":"Round","objective":"TimeLeft"},"color": "white"},{"text": " 🕑 | 🏆 ","color": "white"},{"score":{"name": "Blue","objective": "RoundWins"},"color": "blue"}]
 execute if score Round GameStatus matches 1..2 run bossbar set minecraft:1 name [{"score":{"name": "Red","objective": "RoundWins"},"color": "red"},{"text": " 🏆 | 🕑 ","color": "white"},{"score":{"name":"Hack","objective":"TimeLeft"},"color": "red"},{"text": " 🕑 | 🏆 ","color": "white"},{"score":{"name": "Blue","objective": "RoundWins"},"color": "blue"}]
-execute if score Red PlayerCount matches 0 if entity @a[team=Blue] unless score Blue RoundWins matches 3 run scoreboard players add Blue RoundWins 1
-execute if score Red PlayerCount matches 0 if entity @a[team=Blue] unless score Blue RoundWins matches 3 unless score Red RoundWins matches 3 run function data:rounds/start
-execute if score Blue PlayerCount matches 0 if entity @a[team=Red] unless score Red RoundWins matches 3 run scoreboard players add Red RoundWins 1
-execute if score Blue PlayerCount matches 0 if entity @a[team=Red] unless score Red RoundWins matches 3 unless score Blue RoundWins matches 3 run function data:rounds/start
+execute if score Red PlayerCount matches 0 if score Round TimeLeft matches ..240 if entity @a[team=Blue] unless score Blue RoundWins matches 3 run scoreboard players add Blue RoundWins 1
+execute if score Red PlayerCount matches 0 if score Round TimeLeft matches ..240 if entity @a[team=Blue] unless score Blue RoundWins matches 3 unless score Red RoundWins matches 3 run function data:rounds/start
+execute if score Blue PlayerCount matches 0 if score Round TimeLeft matches ..240 if entity @a[team=Red] unless score Red RoundWins matches 3 run scoreboard players add Red RoundWins 1
+execute if score Blue PlayerCount matches 0 if score Round TimeLeft matches ..240 if entity @a[team=Red] unless score Red RoundWins matches 3 unless score Blue RoundWins matches 3 run function data:rounds/start
 execute if score Hack TimeLeft matches -1 if entity @a[team=Red] unless score Red RoundWins matches 3 run scoreboard players add Red RoundWins 1
 execute if score Hack TimeLeft matches -1 if entity @a[team=Red] unless score Red RoundWins matches 3 unless score Blue RoundWins matches 3 run function data:rounds/start
 execute if score Round TimeLeft matches -1 if entity @a[team=Blue] unless score Blue RoundWins matches 3 run scoreboard players add Blue RoundWins 1
