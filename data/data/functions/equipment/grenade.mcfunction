@@ -33,6 +33,7 @@ execute as @e[tag=HE] at @s if score @s Time matches 110 run scoreboard players 
 execute as @e[tag=HE] at @s if score @s Time matches 110 run scoreboard players remove @e[team=Blue,distance=2.1..4] Health 30
 execute as @e[tag=HE] at @s if score @s Time matches 110 run scoreboard players remove @e[team=Red,distance=4.1..6] Health 10
 execute as @e[tag=HE] at @s if score @s Time matches 110 run scoreboard players remove @e[team=Blue,distance=4.1..6] Health 10
+execute as @e[tag=HE] at @s run kill @a[distance=..6,scores={Health=..0}]
 
 execute as @e[tag=HE] if score @s Time matches 120.. run kill @s
 execute as @e[tag=Smoke] if score @s Time matches 310.. run kill @s

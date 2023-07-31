@@ -1,5 +1,9 @@
 execute if score Red RoundWins matches 3 run tellraw @a {"text": "Red team has won!"}
 execute if score Blue RoundWins matches 3 run tellraw @a {"text": "Blue team has won!"}
+execute if score Red RoundWins matches 3 run scoreboard players set Round GameStatus 3
+execute if score Blue RoundWins matches 3 run scoreboard players set Round GameStatus 3
+execute if score Red RoundWins matches 3 run scoreboard players set Inter TimeLeft 40
+execute if score Blue RoundWins matches 3 run scoreboard players set Inter TimeLeft 40
 execute if score Red RoundWins matches 3 run xp add @a[team=Red] 50 points
 execute if score Blue RoundWins matches 3 run xp add @a[team=Blue] 50 points
 execute if score Red RoundWins matches 3 run xp add @a[team=Blue] 10 points
@@ -10,7 +14,10 @@ execute if score Red RoundWins matches 3 in overworld run tp @a 0 -50 0
 execute if score Blue RoundWins matches 3 in overworld run tp @a 0 -50 0
 execute if score Red RoundWins matches 3 in overworld run scoreboard players set Red RoundWins 0
 execute if score Blue RoundWins matches 3 in overworld run scoreboard players set Blue RoundWins 0
+execute if score Red RoundWins matches 3 in overworld run scoreboard players set Blue RoundWins 0
+execute if score Blue RoundWins matches 3 in overworld run scoreboard players set Red RoundWins 0
 
+execute if score Red PlayerCount matches 0 if score Blue PlayerCount matches 0 in data:map run function data:rounds/start
 bossbar set minecraft:1 players @a
 execute if score Round GameStatus matches 0 run bossbar set minecraft:1 max 240
 execute if score Round GameStatus matches 1..2 run bossbar set minecraft:1 max 45

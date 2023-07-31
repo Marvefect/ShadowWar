@@ -1,0 +1,3 @@
+execute if score Round GameStatus matches 3 if score Round Time matches 19.. unless score Inter TimeLeft matches ..-1 if entity @e[team=Red] if entity @e[team=Blue] run scoreboard players remove Inter TimeLeft 1
+execute if score Round GameStatus matches 3 run bossbar set minecraft:1 name [{"text": "Intermission... ","color": "white"},{"score":{"name": "Inter","objective": "TimeLeft"}}]
+execute if score Round GameStatus matches 3 if score Inter TimeLeft matches ..0 run function data:rounds/newgame
