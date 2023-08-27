@@ -2,6 +2,7 @@ execute as @a[tag=!P.Reloading,nbt={SelectedItemSlot:0},advancements={data:right
 execute as @a[tag=!S.Reloading,nbt={SelectedItemSlot:1},advancements={data:right_click=true}] run tag @s add S.Reloading
 execute as @a[tag=!P.Reloading,nbt={SelectedItemSlot:0},advancements={data:right_click=true}] run scoreboard players reset @s Time
 execute as @a[tag=!S.Reloading,nbt={SelectedItemSlot:1},advancements={data:right_click=true}] run scoreboard players reset @s Time
+advancement revoke @s only data:right_click
 execute as @a[tag=P.Reloading] run effect give @s slowness 1 4 true
 execute as @a[tag=S.Reloading] run effect give @s slowness 1 4 true
 
