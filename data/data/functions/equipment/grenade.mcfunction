@@ -7,10 +7,13 @@ execute as @e[tag=Grenade] store result score @s y1 run data get entity @s Rotat
 execute as @e[tag=Grenade] run scoreboard players add @s y1 2
 execute as @e[tag=Grenade] store result entity @s Rotation[1] float 1 run scoreboard players get @s y1
 
-execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 180 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air unless block ^ ^ ^.5 air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air unless block ^ ^ ^.5 air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air unless block ^ ^ ^.5 air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air unless block ^ ^ ^.5 air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
+execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air unless block ^ ^ ^.5 air store result entity @s Rotation[0] float 1 run scoreboard players operation @s x1 += 45 Numbers
 execute as @e[tag=Grenade] at @s unless block ~ ~-.5 ~ air store result entity @s Rotation[1] float -0.8 run scoreboard players get @s y1
-execute as @e[tag=Grenade] at @s unless block ~ ~ ~ air run scoreboard players remove @s Motion 1
-execute as @e[tag=Grenade] at @s unless block ~ ~-.5 ~ air run scoreboard players remove @s Motion 1
 
 execute as @e[tag=Grenade] at @s if score @s Time matches 1..100 run tp @s ^ ^ ^.5
 

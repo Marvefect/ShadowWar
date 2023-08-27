@@ -68,8 +68,9 @@ execute as @a unless score @s S.Ammo matches 1.. run function data:weapons/reloa
 execute as @a[tag=P.Reloading] run function data:weapons/reload
 execute as @a[tag=S.Reloading] run function data:weapons/reload
 
-execute as @a[nbt={SelectedItem:{"tag":{Interaction:1}}}] at @s run tp @e[type=interaction,limit=1,sort=nearest,tag=Gun] ~ ~.6 ~ facing entity @p
-execute as @a[nbt={SelectedItem:{"tag":{Interaction:1}}}] at @s unless entity @e[type=interaction,distance=..1.5] run summon interaction ~ ~ ~ {height:1.5f,width:1.5f,Tags:[Gun]}
+execute as @a[nbt={SelectedItem:{"tag":{Interaction:1}}}] run item replace entity @s weapon.offhand with ender_eye 
+#execute as @a[nbt={SelectedItem:{"tag":{Interaction:1}}}] at @s run tp @e[type=interaction,limit=1,sort=nearest,tag=Gun] ~ ~.6 ~ facing entity @p
+#execute as @a[nbt={SelectedItem:{"tag":{Interaction:1}}}] at @s unless entity @e[type=interaction,distance=..1.5] run summon interaction ~ ~ ~ {height:1.5f,width:1.5f,Tags:[Gun]}
 execute as @e[type=interaction,tag=Gun] at @s unless entity @e[type=player,distance=..3] run kill @s
 execute as @e[type=interaction,tag=Gun] run data remove entity @s attack
 execute as @e[type=interaction,tag=Gun] run data remove entity @s interaction
