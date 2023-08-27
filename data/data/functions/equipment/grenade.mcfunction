@@ -16,6 +16,7 @@ execute as @e[tag=Grenade] at @s unless block ~ ~ ~-0.5 air store result entity 
 execute as @e[tag=Grenade] at @s unless block ~ ~-.5 ~ air store result entity @s Rotation[1] float -0.8 run scoreboard players get @s y1
 
 execute as @e[tag=Grenade] at @s if score @s Time matches 1..100 run tp @s ^ ^ ^.5
+execute as @e[tag=Grenade] at @s if score @s Time matches 101.. if block ~ ~-.5 ~ air run tp @s ~ ~-.5 ~
 
 execute as @e[tag=Smoke] at @s if score @s Time matches 110.. run particle explosion_emitter ~ ~ ~
 execute as @e[tag=Smoke] at @s if score @s Time matches 110 run playsound block.fire.extinguish player @a ~ ~ ~
