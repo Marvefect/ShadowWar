@@ -17,6 +17,3 @@ execute as @a[tag=shapedcharge] at @s run tag @s remove shapedcharge
 
 execute as @a[scores={EquipmentSlot1=1..5},tag=!EqS1used] if entity @s[nbt={SelectedItemSlot:2}] at @s run tag @s add EqS1used
 execute as @a[scores={EquipmentSlot2=1..5},tag=!EqS2used] if entity @s[nbt={SelectedItemSlot:3}] at @s run tag @s add EqS2used
-
-advancement revoke @s only data:trigger_fire
-advancement revoke @s only data:trigger_equipment
