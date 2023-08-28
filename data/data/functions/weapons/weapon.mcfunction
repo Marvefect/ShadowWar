@@ -14,7 +14,7 @@ execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading] run item replace entity
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.MaxAmmo 5
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.ReloadTime 80
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Firerate 60
-execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 90
+execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 70
 
 execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:2,Unbreakable:1b,PWeapon:3,display:{Name:'{"text":"CBR-C","bold":true}'},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 20
