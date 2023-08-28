@@ -4,26 +4,26 @@
 # 3 - CBR-C (06)
 # 4 - Sawblade (07)
 
-execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:2,Unbreakable:1b,PWeapon:1,display:{Name:'{"text":"F57","bold":true}'},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:11,Unbreakable:1b,PWeapon:1,display:{Name:'{"text":"F57","bold":true}'},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.MaxAmmo 30
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Firerate 3
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Damage 5
 
-execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:2,Unbreakable:1b,PWeapon:2,display:{Name:'{"text":"CH-A","bold":true}'},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:12,Unbreakable:1b,PWeapon:2,display:{Name:'{"text":"CH-A","bold":true}'},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.MaxAmmo 5
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.ReloadTime 80
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Firerate 60
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 70
 
-execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:2,Unbreakable:1b,PWeapon:3,display:{Name:'{"text":"CBR-C","bold":true}'},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:13,Unbreakable:1b,PWeapon:3,display:{Name:'{"text":"CBR-C","bold":true}'},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 20
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Firerate 7
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Damage 12
 
 
-execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:2,Unbreakable:1b,PWeapon:4,display:{Name:'{"text":"Sawblade","bold":true}'},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:14,Unbreakable:1b,PWeapon:4,display:{Name:'{"text":"Sawblade","bold":true}'},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.MaxAmmo 100
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.ReloadTime 120
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Firerate 2
@@ -35,19 +35,19 @@ execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Damage 3
 # 2 - 480 MCS (05)
 # 3 - Raven (04)
 
-execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading] run item replace entity @s hotbar.1 with iron_hoe{Interaction:1,CustomModelData:1,Unbreakable:1b,SWeapon:1,display:{Name:'{"text":"UP-9","bold":true}'},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading] run item replace entity @s hotbar.1 with iron_hoe{Interaction:1,CustomModelData:21,Unbreakable:1b,SWeapon:1,display:{Name:'{"text":"UP-9","bold":true}'},HideFlags:6} 1
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.MaxAmmo 12
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.ReloadTime 50
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Firerate 10
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Damage 12
 
-execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe{Interaction:1,CustomModelData:1,Unbreakable:1b,SWeapon:2,display:{Name:'{"text":"480 MCS","bold":true}'},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe{Interaction:1,CustomModelData:22,Unbreakable:1b,SWeapon:2,display:{Name:'{"text":"480 MCS","bold":true}'},HideFlags:6} 1
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.MaxAmmo 6
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.ReloadTime 80
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Firerate 20
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Damage 7
 
-execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading] run item replace entity @s hotbar.1 with golden_hoe{Interaction:1,CustomModelData:1,Unbreakable:1b,SWeapon:3,display:{Name:'{"text":"Raven","bold":true}'},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading] run item replace entity @s hotbar.1 with golden_hoe{Interaction:1,CustomModelData:23,Unbreakable:1b,SWeapon:3,display:{Name:'{"text":"Raven","bold":true}'},HideFlags:6} 1
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 8
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.ReloadTime 60
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 20
