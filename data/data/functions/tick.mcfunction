@@ -4,6 +4,7 @@ execute if score Round Time matches 20.. run scoreboard players reset Round Time
 scoreboard players add @a Time 1
 scoreboard players reset @a[scores={Time=180..}] Time
 execute in overworld run spawnpoint @a 0 -60 0 
+bossbar set minecraft:1 players @a
 
 title @a[nbt={SelectedItemSlot:1}] times 0 3 0
 title @a[nbt={SelectedItemSlot:0}] times 0 3 0
