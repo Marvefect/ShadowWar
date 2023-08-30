@@ -1,4 +1,4 @@
-execute as @e[tag=Grenade] at @s if entity @e[tag=FacingGrenade,distance=..1.5] run tp @s ~ ~ ~ facing entity @e[tag=FacingGrenade,limit=1]
+execute as @e[tag=Grenade] at @s if entity @e[tag=FacingGrenade,distance=..1.5] run tp @s ~ ~ ~ facing entity @e[tag=FacingGrenade,limit=1,sort=nearest]
 execute as @e[tag=FacingGrenade] run kill @s
 
 execute as @e[tag=Grenade] store result score @s x1 run data get entity @s Rotation[0] 1

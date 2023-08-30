@@ -10,3 +10,5 @@ execute if score @s P.Ammo matches 1.. run tag @s[tag=!P.Firerate,nbt={SelectedI
 execute if score @s S.Ammo matches 1.. run scoreboard players remove @s[tag=!S.Firerate,nbt={SelectedItemSlot:1}] S.Ammo 1
 execute if score @s S.Ammo matches 1.. run scoreboard players reset @s[tag=!S.Firerate,nbt={SelectedItemSlot:1}] Time
 execute if score @s S.Ammo matches 1.. run tag @s[tag=!S.Firerate,nbt={SelectedItemSlot:1}] add S.Firerate
+
+advancement revoke @s only data:trigger_fire
