@@ -10,16 +10,16 @@ scoreboard objectives add P.MaxAmmo dummy
 scoreboard objectives add P.ReloadTime dummy
 scoreboard objectives add P.Firerate dummy
 scoreboard objectives add P.Damage dummy
-scoreboard objectives add P.Recoil dummy
-scoreboard objectives add P.Spread dummy
 
 scoreboard objectives add S.Ammo dummy
 scoreboard objectives add S.MaxAmmo dummy
 scoreboard objectives add S.ReloadTime dummy
 scoreboard objectives add S.Firerate dummy
 scoreboard objectives add S.Damage dummy
-scoreboard objectives add S.Recoil dummy
-scoreboard objectives add S.Spread dummy
+
+scoreboard objectives add Recoil dummy
+scoreboard objectives add RecoilRandom dummy
+scoreboard objectives add RecoilDirec dummy
 
 scoreboard objectives add PrimaryWeapon dummy
 scoreboard objectives add SecondaryWeapon dummy
