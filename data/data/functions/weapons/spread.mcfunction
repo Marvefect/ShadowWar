@@ -38,3 +38,5 @@ execute if score @s RecoilDirec matches 2 if score @s RecoilRandom matches 23..2
 execute if score @s RecoilDirec matches 2 if score @s RecoilRandom matches 25..26 run tp @s ~ ~ ~ ~-2.6 ~
 execute if score @s RecoilDirec matches 2 if score @s RecoilRandom matches 27..28 run tp @s ~ ~ ~ ~-2.8 ~
 execute if score @s RecoilDirec matches 2 if score @s RecoilRandom matches 29.. run tp @s ~ ~ ~ ~-3 ~
+
+schedule function data:weapon/recoil
