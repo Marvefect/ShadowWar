@@ -33,3 +33,4 @@ scoreboard players set @a[scores={ArmorType=3}] ArmorHealth 400
 scoreboard players set @a[scores={ArmorType=4}] ArmorHealth 600
 execute as @a run scoreboard players operation @s P.Ammo = @s P.MaxAmmo
 execute as @a run scoreboard players operation @s S.Ammo = @s S.MaxAmmo
+effect give @a minecraft:night_vision infinite 1 true

@@ -48,10 +48,10 @@ execute as @a unless score @s PrevArmorType = @s ArmorType if score @s ArmorType
 execute as @a unless score @s PrevArmorType = @s ArmorType if score @s ArmorType matches 4 run attribute @s generic.movement_speed modifier add 0-0-0-0-3 "Armor" -0.4 multiply
 
 execute as @a[scores={ArmorType=0}] run item replace entity @s armor.chest with air
-execute as @a[scores={ArmorType=1..},scores={ArmorHealth=..0}] run item replace entity @s armor.chest with air
-execute as @a[scores={ArmorType=1},scores={ArmorHealth=1..}] run item replace entity @s armor.chest with leather_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"II-A Scout","bold":true}'},HideFlags:6} 
-execute as @a[scores={ArmorType=2},scores={ArmorHealth=1..}] run item replace entity @s armor.chest with chainmail_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III-A Raider","bold":true}'},HideFlags:6}
-execute as @a[scores={ArmorType=3},scores={ArmorHealth=1..}] run item replace entity @s armor.chest with iron_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III-A Frontline","bold":true}'},HideFlags:6}
-execute as @a[scores={ArmorType=4},scores={ArmorHealth=1..}] run item replace entity @s armor.chest with netherite_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III Aegis","bold":true}'},HideFlags:6}
+execute as @a[scores={ArmorType=1..,ArmorHealth=..-1}] run item replace entity @s armor.chest with air
+execute as @a[scores={ArmorType=1,ArmorHealth=0..}] run item replace entity @s armor.chest with leather_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"II-A Scout","bold":true}'},HideFlags:6} 
+execute as @a[scores={ArmorType=2,ArmorHealth=0..}] run item replace entity @s armor.chest with chainmail_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III-A Raider","bold":true}'},HideFlags:6}
+execute as @a[scores={ArmorType=3,ArmorHealth=0..}] run item replace entity @s armor.chest with iron_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III-A Frontline","bold":true}'},HideFlags:6}
+execute as @a[scores={ArmorType=4,ArmorHealth=0..}] run item replace entity @s armor.chest with netherite_chestplate{CustomModelData:1,Unbreakable:1b,display:{Name:'{"text":"III Aegis","bold":true}'},HideFlags:6}
 
 execute as @a run scoreboard players operation @s PrevArmorType = @s ArmorType
