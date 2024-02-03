@@ -3,6 +3,9 @@ scoreboard objectives add MaxHealth dummy
 scoreboard objectives add Time dummy
 scoreboard objectives add ArmorType dummy
 scoreboard objectives add PrevArmorType dummy
+scoreboard objectives add ArmorHealth dummy
+scoreboard objectives add ArmorProt dummy
+scoreboard objectives add DamageTaken dummy
 scoreboard objectives add Jump custom:jump
 
 scoreboard objectives add P.Ammo dummy
@@ -38,6 +41,9 @@ scoreboard objectives add x1 dummy
 scoreboard objectives add y1 dummy
 scoreboard objectives add z1 dummy
 scoreboard objectives add Numbers dummy
+
+scoreboard players set 100 Numbers 100
+
 bossbar add 1 {"text": "Rounds"}
 
 kill @e[type=interaction,tag=Armory]

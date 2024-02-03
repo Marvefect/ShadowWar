@@ -26,5 +26,10 @@ tag @a remove EqS2used
 execute in data:map run tp @a[team=Red] 0.0 5.0 28.0
 execute in data:map run tp @a[team=Blue] 0.0 5.0 -28.0
 scoreboard players set @a Health 1000
+scoreboard players set @a[scores={ArmorType=0}] ArmorHealth 0
+scoreboard players set @a[scores={ArmorType=1}] ArmorHealth 200
+scoreboard players set @a[scores={ArmorType=2}] ArmorHealth 300
+scoreboard players set @a[scores={ArmorType=3}] ArmorHealth 400
+scoreboard players set @a[scores={ArmorType=4}] ArmorHealth 600
 execute as @a run scoreboard players operation @s P.Ammo = @s P.MaxAmmo
 execute as @a run scoreboard players operation @s S.Ammo = @s S.MaxAmmo
