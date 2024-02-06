@@ -18,4 +18,5 @@ execute unless entity @s[dx=0.75,dy=0.75,dz=0.75] if entity @p[dx=0.75,dy=0.75,d
 execute if entity @s[team=Red] unless entity @s[dx=0.8,dy=0.8,dz=0.8] run damage @p[dx=0.75,dy=0.75,dz=0.75,team=Blue] 0.5 player_attack
 execute if entity @s[team=Blue] unless entity @s[dx=0.8,dy=0.8,dz=0.8] run damage @p[dx=0.75,dy=0.75,dz=0.75,team=Red] 0.5 player_attack
 execute if entity @p[dx=0.75,dy=0.75,dz=0.75,scores={Health=..0}] run xp add @s 5 points
+execute if entity @p[dx=0.75,dy=0.75,dz=0.75,scores={Health=..0}] run tag @p[dx=0.75,dy=0.75,dz=0.75,scores={Health=..0}] add Spectating
 execute if entity @p[dx=0.75,dy=0.75,dz=0.75,scores={Health=..0}] run kill @p[dx=0.75,dy=0.75,dz=0.75,scores={Health=..0}]

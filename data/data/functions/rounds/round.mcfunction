@@ -27,8 +27,10 @@ execute if score Round GameStatus matches 0 if score Round Time matches 19.. unl
 execute if score Round GameStatus matches 1..2 if score Round Time matches 19.. unless score Hack TimeLeft matches ..-1 run scoreboard players remove Hack TimeLeft 1
 execute if score Round GameStatus matches 0 store result bossbar minecraft:1 value run scoreboard players get Round TimeLeft
 execute if score Round GameStatus matches 1 store result bossbar minecraft:1 value run scoreboard players get Hack TimeLeft
-execute in data:map store result score Red PlayerCount if entity @a[team=Red,distance=..100]
-execute in data:map store result score Blue PlayerCount if entity @a[team=Blue,distance=..100]
+execute in data:map store result score Red PlayerCount if entity @a[team=Red,distance=..100,tag=!Spectating]
+execute in data:map store result score Blue PlayerCount if entity @a[team=Blue,distance=..100,tag=!Spectating]
+gamemode adventure @a[team=Red]
+gamemode adventure @a[team=Blue]
 execute if score Round GameStatus matches 0 run bossbar set minecraft:1 name [{"score":{"name": "Red","objective": "RoundWins"},"color": "red"},{"text": " 🏆 | 🕑 ","color": "white"},{"score":{"name":"Round","objective":"TimeLeft"},"color": "white"},{"text": " 🕑 | 🏆 ","color": "white"},{"score":{"name": "Blue","objective": "RoundWins"},"color": "blue"}]
 execute if score Round GameStatus matches 1..2 run bossbar set minecraft:1 name [{"score":{"name": "Red","objective": "RoundWins"},"color": "red"},{"text": " 🏆 | 🕑 ","color": "white"},{"score":{"name":"Hack","objective":"TimeLeft"},"color": "red"},{"text": " 🕑 | 🏆 ","color": "white"},{"score":{"name": "Blue","objective": "RoundWins"},"color": "blue"}]
 execute if score Red PlayerCount matches 0 if score Round TimeLeft matches ..240 if entity @a[team=Blue] unless score Blue RoundWins matches 3 run scoreboard players add Blue RoundWins 1
