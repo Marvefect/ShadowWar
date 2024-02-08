@@ -23,6 +23,7 @@ scoreboard players set Round TimeLeft 250
 scoreboard players set Hack TimeLeft 45
 tag @a remove EqS1used
 tag @a remove EqS2used
+gamemode adventure @a[tag=Spectating]
 tag @a remove Spectating
 execute in data:map run tp @a[team=Red] 0.0 5.0 28.0
 execute in data:map run tp @a[team=Blue] 0.0 5.0 -28.0
@@ -34,4 +35,5 @@ scoreboard players set @a[scores={ArmorType=3}] ArmorHealth 400
 scoreboard players set @a[scores={ArmorType=4}] ArmorHealth 600
 execute as @a run scoreboard players operation @s P.Ammo = @s P.MaxAmmo
 execute as @a run scoreboard players operation @s S.Ammo = @s S.MaxAmmo
-effect give @a minecraft:night_vision infinite 3 true
+effect clear @a minecraft:night_vision
+effect give @a minecraft:night_vision infinite 1 true
