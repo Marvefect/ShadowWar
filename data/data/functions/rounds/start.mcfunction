@@ -23,8 +23,8 @@ scoreboard players set Round TimeLeft 250
 scoreboard players set Hack TimeLeft 45
 tag @a remove EqS1used
 tag @a remove EqS2used
-gamemode adventure @a[tag=Spectating]
 tag @a remove Spectating
+gamemode adventure @a[gamemode=spectator]
 execute in data:map run tp @a[team=Red] 0.0 5.0 28.0
 execute in data:map run tp @a[team=Blue] 0.0 5.0 -28.0
 scoreboard players set @a Health 1000

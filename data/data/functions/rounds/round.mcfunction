@@ -10,10 +10,10 @@ execute if score Red RoundWins matches 3 run xp add @a[team=Blue] 10 points
 execute if score Blue RoundWins matches 3 run xp add @a[team=Red] 10 points
 execute if score Red RoundWins matches 3 run team leave @a
 execute if score Blue RoundWins matches 3 run team leave @a
-execute if score Red RoundWins matches 3 in overworld run gamemode adventure @a[tag=Spectating]
-execute if score Blue RoundWins matches 3 in overworld run gamemode adventure @a[tag=Spectating]
 execute if score Red RoundWins matches 3 in overworld run tag @a remove Spectating
 execute if score Blue RoundWins matches 3 in overworld run tag @a remove Spectating
+execute if score Red RoundWins matches 3 in overworld run gamemode adventure @a[gamemode=spectator]
+execute if score Blue RoundWins matches 3 in overworld run gamemode adventure @a[gamemode=spectator]
 execute if score Red RoundWins matches 3 in overworld run tp @a 0 -50 0
 execute if score Blue RoundWins matches 3 in overworld run tp @a 0 -50 0
 execute if score Red RoundWins matches 3 in overworld run scoreboard players set Red RoundWins 0

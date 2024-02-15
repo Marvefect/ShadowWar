@@ -1,4 +1,3 @@
-effect give @a[tag=Spectating] invisibility 1 1 true
 clear @a[tag=Spectating]
 execute as @a[tag=Spectating,gamemode=adventure] in data:map run tp 0 10 0
 gamemode spectator @a[tag=Spectating,gamemode=adventure]
