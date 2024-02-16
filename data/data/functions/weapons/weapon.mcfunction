@@ -1,57 +1,55 @@
-# Primary Weapons:
-# 1 - F57 (02)
-# 2 - CH-A (03)
-# 3 - CBR-C (06)
-# 4 - Sawblade (07)
-
-execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:11,Unbreakable:1b,PWeapon:1,display:{Name:'{"text":"F57","bold":true}',Lore:['[{"text":"Damage: 5","italic":false}]','[{"text":"Firerate: 0.15s","italic":false}]','[{"text":"Capacity: 30","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.1m","italic":false}]','[{"text":"Spread: +2° / 20°","italic":false}]']},HideFlags:6} 1
+# Stats
+execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:11,Unbreakable:1b,PWeapon:1,display:{Name:'{"text":"F57","bold":true}',Lore:['[{"text":"Damage: 7","italic":false}]','[{"text":"Firerate: 0.2s","italic":false}]','[{"text":"Capacity: 30","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.1m","italic":false}]','[{"text":"Spread: +2° / 20°","italic":false}]']},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.MaxAmmo 30
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.ReloadTime 60
-execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Firerate 3
-execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Damage 5
+execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Firerate 5
+execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Damage 7
 
-execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:12,Unbreakable:1b,PWeapon:2,display:{Name:'{"text":"CH-A","bold":true}',Lore:['[{"text":"Damage: 60","italic":false}]','[{"text":"Firerate: 2s","italic":false}]','[{"text":"Capacity: 5","italic":false}]','[{"text":"Reload Time: 4s","italic":false}]','[{"text":"Recoil: 1m","italic":false}]','[{"text":"Spread: +20° / 60°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading] run item replace entity @s hotbar.0 with diamond_hoe{Interaction:1,CustomModelData:12,Unbreakable:1b,PWeapon:2,display:{Name:'{"text":"CH-A","bold":true}',Lore:['[{"text":"Damage: 65","italic":false}]','[{"text":"Firerate: 2s","italic":false}]','[{"text":"Capacity: 5","italic":false}]','[{"text":"Reload Time: 4s","italic":false}]','[{"text":"Recoil: 1m","italic":false}]','[{"text":"Spread: +20° / 60°","italic":false}]']},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.MaxAmmo 5
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.ReloadTime 80
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Firerate 40
-execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 60
+execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 65
 
-execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:13,Unbreakable:1b,PWeapon:3,display:{Name:'{"text":"CBR-C","bold":true}',Lore:['[{"text":"Damage: 12","italic":false}]','[{"text":"Firerate: 0.35s","italic":false}]','[{"text":"Capacity: 20","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.2m","italic":false}]','[{"text":"Spread: +3° / 25°","italic":false}]']},HideFlags:6} 1
-execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 20
+execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe{Interaction:1,CustomModelData:13,Unbreakable:1b,PWeapon:3,display:{Name:'{"text":"CBR-C","bold":true}',Lore:['[{"text":"Damage: 18","italic":false}]','[{"text":"Firerate: 0.5s","italic":false}]','[{"text":"Capacity: 10","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.2m","italic":false}]','[{"text":"Spread: +3° / 25°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 10
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.ReloadTime 60
-execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Firerate 7
-execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Damage 12
+execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Firerate 10
+execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Damage 18
 
 
-execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading] run item replace entity @s hotbar.0 with netherite_hoe{Interaction:1,CustomModelData:14,Unbreakable:1b,PWeapon:4,display:{Name:'{"text":"Sawblade","bold":true}',Lore:['[{"text":"Damage: 5","italic":false}]','[{"text":"Firerate: 0.1s","italic":false}]','[{"text":"Capacity: 100","italic":false}]','[{"text":"Reload Time: 6s","italic":false}]','[{"text":"Recoil: 0.07m","italic":false}]','[{"text":"+1° / 40°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading] run item replace entity @s hotbar.0 with diamond_hoe{Interaction:1,CustomModelData:14,Unbreakable:1b,PWeapon:4,display:{Name:'{"text":"Sawblade","bold":true}',Lore:['[{"text":"Damage: 4","italic":false}]','[{"text":"Firerate: 0.1s","italic":false}]','[{"text":"Capacity: 100","italic":false}]','[{"text":"Reload Time: 6s","italic":false}]','[{"text":"Recoil: 0.07m","italic":false}]','[{"text":"+1° / 40°","italic":false}]']},HideFlags:6} 1
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.MaxAmmo 100
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.ReloadTime 120
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Firerate 2
-execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Damage 5
+execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Damage 4
 
 
-# Secondary Weapons:
-# 1 - UP9 (01)
-# 2 - 480 MCS (05)
-# 3 - Raven (04)
-
-execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading] run item replace entity @s hotbar.1 with iron_hoe{Interaction:1,CustomModelData:21,Unbreakable:1b,SWeapon:1,display:{Name:'{"text":"UP-9","bold":true}',Lore:['[{"text":"Damage: 12","italic":false}]','[{"text":"Firerate: 0.5s","italic":false}]','[{"text":"Capacity: 12","italic":false}]','[{"text":"Reload Time: 2.5s","italic":false}]','[{"text":"Recoil: 0.3m","italic":false}]','[{"text":"Spread: +5° / +15°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe{Interaction:1,CustomModelData:21,Unbreakable:1b,SWeapon:1,display:{Name:'{"text":"UP-9","bold":true}',Lore:['[{"text":"Damage: 9","italic":false}]','[{"text":"Firerate: 0.5s","italic":false}]','[{"text":"Capacity: 12","italic":false}]','[{"text":"Reload Time: 2.5s","italic":false}]','[{"text":"Recoil: 0.3m","italic":false}]','[{"text":"Spread: +5° / +15°","italic":false}]']},HideFlags:6} 1
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.MaxAmmo 12
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.ReloadTime 50
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Firerate 10
-execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Damage 12
+execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Damage 9
 
-execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe{Interaction:1,CustomModelData:22,Unbreakable:1b,SWeapon:2,display:{Name:'{"text":"480 MCS","bold":true}',Lore:['[{"text":"Damage: 7 x 7 shells","italic":false}]','[{"text":"Firerate: 1.5s","italic":false}]','[{"text":"Capacity: 6","italic":false}]','[{"text":"Reload Time: 2.5s","italic":false}]','[{"text":"Recoil: 0.6m","italic":false}]','[{"text":"Spread: 30° (Shell)","italic":false}]']},HideFlags:6} 1
-execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.MaxAmmo 6
-execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.ReloadTime 80
-execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Firerate 20
-execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Damage 7
+execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe{Interaction:1,CustomModelData:22,Unbreakable:1b,SWeapon:2,display:{Name:'{"text":"K45","bold":true}',Lore:['[{"text":"Damage: 11","italic":false}]','[{"text":"Firerate: 0.5s","italic":false}]','[{"text":"Capacity: 8","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.25m","italic":false}]','[{"text":"Spread: +4° / +12°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.MaxAmmo 8
+execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.ReloadTime 60
+execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Firerate 10
+execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Damage 11
 
-execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading] run item replace entity @s hotbar.1 with golden_hoe{Interaction:1,CustomModelData:23,Unbreakable:1b,SWeapon:3,display:{Name:'{"text":"Raven","bold":true}',Lore:['[{"text":"Damage: 30","italic":false}]','[{"text":"Firerate: 1s","italic":false}]','[{"text":"Capacity: 8","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.8m","italic":false}]','[{"text":"Spread: +15° / 45°","italic":false}]']},HideFlags:6} 1
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 8
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.ReloadTime 60
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 20
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Damage 30
+execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading] run item replace entity @s hotbar.1 with iron_hoe{Interaction:1,CustomModelData:23,Unbreakable:1b,SWeapon:3,display:{Name:'{"text":"S97","bold":true}',Lore:['[{"text":"Damage: 4","italic":false}]','[{"text":"Firerate: 0.2s","italic":false}]','[{"text":"Capacity: 30","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.15m","italic":false}]','[{"text":"Spread: +3° / +15°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 12
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.ReloadTime 50
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 10
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Damage 9
+
+execute as @a[scores={SecondaryWeapon=4},tag=!S.Reloading] run item replace entity @s hotbar.1 with golden_hoe{Interaction:1,CustomModelData:24,Unbreakable:1b,SWeapon:4,display:{Name:'{"text":"RAVEN","bold":true}',Lore:['[{"text":"Damage: 30","italic":false}]','[{"text":"Firerate: 1.25s","italic":false}]','[{"text":"Capacity: 6","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.8m","italic":false}]','[{"text":"Spread: +15° / 45°","italic":false}]']},HideFlags:6} 1
+execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.MaxAmmo 8
+execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.ReloadTime 60
+execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.Firerate 25
+execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.Damage 30
+
+# Code
 
 execute as @a unless score @s PrimaryWeapon matches 1.. run scoreboard players set @s PrimaryWeapon 1
 execute as @a unless score @s SecondaryWeapon matches 1.. run scoreboard players set @s SecondaryWeapon 1
@@ -61,8 +59,6 @@ execute as @a unless score @s S.Ammo matches 0.. run scoreboard players operatio
 execute as @a if score @s P.Ammo > @s P.MaxAmmo run scoreboard players reset @s P.Ammo
 execute as @a if score @s S.Ammo > @s S.MaxAmmo run scoreboard players reset @s S.Ammo
 
-## Code
-# Firerate
 execute as @a[tag=P.Firerate] if score @s Time >= @s P.Firerate run tag @s remove P.Firerate
 execute as @a[tag=S.Firerate] if score @s Time >= @s S.Firerate run tag @s remove S.Firerate
 

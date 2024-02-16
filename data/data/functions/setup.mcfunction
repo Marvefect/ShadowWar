@@ -55,6 +55,7 @@ execute in overworld run summon interaction 13.0 -59.0 16.5 {Tags:[Primary4,Armo
 execute in overworld run summon interaction 6.0 -59.0 22.5 {Tags:[Secondary1,Armory]}
 execute in overworld run summon interaction 6.0 -59.0 20.5 {Tags:[Secondary2,Armory]}
 execute in overworld run summon interaction 6.0 -59.0 18.5 {Tags:[Secondary3,Armory]}
+execute in overworld run summon interaction 6.0 -59.0 16.5 {Tags:[Secondary4,Armory]}
 
 execute in overworld run summon interaction 2.0 -59.0 22.5 {Tags:[Armor0,Armory]}
 execute in overworld run summon interaction 2.0 -59.0 20.5 {Tags:[Armor1,Armory]}
