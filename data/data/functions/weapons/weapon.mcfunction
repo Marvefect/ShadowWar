@@ -38,10 +38,10 @@ execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Firera
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Damage 11
 
 execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading] run item replace entity @s hotbar.1 with iron_hoe{Interaction:1,CustomModelData:23,Unbreakable:1b,SWeapon:3,display:{Name:'{"text":"S97","bold":true}',Lore:['[{"text":"Damage: 4","italic":false}]','[{"text":"Firerate: 0.2s","italic":false}]','[{"text":"Capacity: 30","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.15m","italic":false}]','[{"text":"Spread: +3° / +15°","italic":false}]']},HideFlags:6} 1
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 12
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 30
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.ReloadTime 50
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 10
-execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Damage 9
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 4
+execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Damage 4
 
 execute as @a[scores={SecondaryWeapon=4},tag=!S.Reloading] run item replace entity @s hotbar.1 with golden_hoe{Interaction:1,CustomModelData:24,Unbreakable:1b,SWeapon:4,display:{Name:'{"text":"RAVEN","bold":true}',Lore:['[{"text":"Damage: 30","italic":false}]','[{"text":"Firerate: 1.25s","italic":false}]','[{"text":"Capacity: 6","italic":false}]','[{"text":"Reload Time: 3s","italic":false}]','[{"text":"Recoil: 0.8m","italic":false}]','[{"text":"Spread: +15° / 45°","italic":false}]']},HideFlags:6} 1
 execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.MaxAmmo 8
