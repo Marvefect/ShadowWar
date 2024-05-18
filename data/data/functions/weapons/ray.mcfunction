@@ -1,4 +1,4 @@
-particle falling_dust gravel ~ ~ ~ 0 0 0 0 5
+particle minecraft:ash
 execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ if entity @s[dx=1,dy=1,dz=1] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function data:weapons/ray
 execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ unless entity @e[dx=0.75,dy=0.75,dz=0.75,type=!armor_stand,type=!item,type=!item_frame,type=!glow_item_frame,type=!block_display,type=!interaction] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function data:weapons/ray
 
