@@ -1,5 +1,6 @@
 # Stats
 execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe[minecraft:custom_data={PWeapon:1},minecraft:custom_model_data=11,minecraft:unbreakable={},minecraft:custom_name="F57"] 1
+execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.MaxAmmo 30
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Firerate 5
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Damage 7
@@ -11,17 +12,16 @@ execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Firerate
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 65
 
 execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading] run item replace entity @s hotbar.0 with iron_hoe[minecraft:custom_data={PWeapon:3},minecraft:custom_model_data=13,minecraft:unbreakable={},minecraft:custom_name="CBR-C"] 1
+execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 10
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Firerate 10
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Damage 18
-
 
 execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading] run item replace entity @s hotbar.0 with diamond_hoe[minecraft:custom_data={PWeapon:4},minecraft:custom_model_data=14,minecraft:unbreakable={},minecraft:custom_name="Sawblade"] 1
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.MaxAmmo 100
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.ReloadTime 120
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Firerate 2
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Damage 4
-
 
 execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading] run item replace entity @s hotbar.1 with stone_hoe[minecraft:custom_data={SWeapon:1},minecraft:custom_model_data=21,minecraft:unbreakable={},minecraft:custom_name="UP9"] 1
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.MaxAmmo 12
