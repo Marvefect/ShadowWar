@@ -1,12 +1,12 @@
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s store result score @s currY run data get entity @s Pos[1] 10
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless block ~ ~-.1 ~ air store result score @s lastY run data get entity @s Pos[1] 10
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s store result score @s currY run data get entity @s Pos[1] 10
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless block ~ ~-.1 ~ air store result score @s lastY run data get entity @s Pos[1] 10
 
 # Backup for the times when everything breaks aaah help me I wanna die fuck shit
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless score @s currY <= @s lastY run summon armor_stand ~ ~ ~ {NoAI:1b,Tags:[Pos],NoGravity:1b}
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless score @s currY <= @s lastY store result entity @e[tag=Pos,limit=1,sort=nearest] Pos[1] double 0.1 run scoreboard players get @s lastY
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless score @s currY <= @s lastY run tp @s @e[tag=Pos,limit=1,sort=nearest] 
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless score @s currY <= @s lastY run kill @e[tag=Pos,limit=1,sort=nearest]
-execute as @a[scores={ArmorType=1..},tag=!ACbypass] at @s unless score @s currY <= @s lastY run scoreboard players reset @s Jump
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless score @s currY <= @s lastY run summon armor_stand ~ ~ ~ {NoAI:1b,Tags:[Pos],NoGravity:1b}
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless score @s currY <= @s lastY store result entity @e[tag=Pos,limit=1,sort=nearest] Pos[1] double 0.1 run scoreboard players get @s lastY
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless score @s currY <= @s lastY run tp @s @e[tag=Pos,limit=1,sort=nearest] 
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless score @s currY <= @s lastY run kill @e[tag=Pos,limit=1,sort=nearest]
+execute as @a[scores={ArmorType=1..},tag=!ACbypass,gamemode=!spectator] at @s unless score @s currY <= @s lastY run scoreboard players reset @s Jump
 execute as @a[scores={ArmorType=0}] run scoreboard players reset @s Jump
 
 # Delete shit around spawns
