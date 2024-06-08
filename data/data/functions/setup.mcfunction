@@ -42,6 +42,9 @@ scoreboard objectives add y1 dummy
 scoreboard objectives add z1 dummy
 scoreboard objectives add Numbers dummy
 
+scoreboard objectives add currY dummy
+scoreboard objectives add lastY dummy
+
 scoreboard players set 100 Numbers 100
 
 bossbar add 1 {"text": "Rounds"}

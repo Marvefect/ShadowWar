@@ -7,7 +7,9 @@ scoreboard players add Round Time 1
 execute if score Round Time matches 20.. run scoreboard players reset Round Time
 scoreboard players add @a Time 1
 scoreboard players reset @a[scores={Time=180..}] Time
-execute in overworld run spawnpoint @a 0 -60 0 
+execute in overworld run spawnpoint @a[team=!Blue,team=!Red] 0 -60 0 
+execute in data:map run spawnpoint @a[team=Red] 0 2 28
+execute in data:map run spawnpoint @a[team=Blue] 0 2 -28 
 bossbar set minecraft:1 players @a
 
 title @a[nbt={SelectedItemSlot:1}] times 0 3 0
