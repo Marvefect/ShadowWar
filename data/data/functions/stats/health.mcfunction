@@ -1,5 +1,5 @@
 execute as @a if score @s Health > @s MaxHealth run scoreboard players operation @s Health = @s MaxHealth
-effect give @a instant_health 1 1 true
+#effect give @a instant_health 1 1 true
 
 # Update HP
 execute as @a run function data:stats/updatehp
