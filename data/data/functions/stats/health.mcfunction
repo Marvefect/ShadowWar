@@ -1,9 +1,8 @@
 execute as @a if score @s Health > @s MaxHealth run scoreboard players operation @s Health = @s MaxHealth
 effect give @a instant_health 1 1 true
 
-data modify storage minecraft:storage input set value {"hp":1d}
-execute as @a store result storage minecraft:storage input.hp double .2 run scoreboard players get @s Health
-execute as @a run function data:stats/updatehp with storage minecraft:storage input
+# Update HP
+execute as @a run function data:stats/updatehp
 
 # Stats
 execute as @a unless score @s PrevArmorType = @s ArmorType if score @s ArmorType matches 0 run scoreboard players set @s ArmorHealth 0

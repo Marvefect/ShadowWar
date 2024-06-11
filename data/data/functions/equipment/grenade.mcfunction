@@ -39,6 +39,8 @@ execute as @e[tag=HE] at @s if score @s Time matches 70 run scoreboard players r
 execute as @e[tag=HE] at @s if score @s Time matches 70 run scoreboard players remove @e[team=Blue,distance=2.1..4] Health 30
 execute as @e[tag=HE] at @s if score @s Time matches 70 run scoreboard players remove @e[team=Red,distance=4.1..6] Health 10
 execute as @e[tag=HE] at @s if score @s Time matches 70 run scoreboard players remove @e[team=Blue,distance=4.1..6] Health 10
+execute as @e[tag=HE] at @s if entity @a[distance=..6,scores={Health=..0}] run tellraw @a [{"selector":"@a[distance=..6,scores={Health=..0}]"},{"text": " was blown up.","color": "white"}]
+execute as @e[tag=HE] at @s run tag @a[distance=..6,scores={Health=..0}] add Spectating
 execute as @e[tag=HE] at @s run kill @a[distance=..6,scores={Health=..0}]
 
 execute as @e[tag=HE] if score @s Time matches 71.. run kill @s

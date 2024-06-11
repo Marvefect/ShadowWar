@@ -43,3 +43,6 @@ scoreboard players set 90 Numbers 90
 scoreboard players set 45 Numbers 45
 scoreboard players set 2 Numbers 2
 # test
+
+# AC / Force Adventure
+gamemode adventure @a[gamemode=survival]
