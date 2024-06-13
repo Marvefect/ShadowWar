@@ -1,6 +1,6 @@
 {
-    "pack" : { 
-        "pack_format" : 26,
-        "description": "Core mechanics"
+    "pack": {
+        "description": "The default data for Minecraft",
+        "pack_format": 48
     }
 }

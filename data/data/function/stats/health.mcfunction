@@ -22,7 +22,7 @@ execute as @a unless score @s PrevArmorType = @s ArmorType if score @s ArmorType
 
 execute as @a[scores={ArmorType=0}] run item replace entity @s armor.chest with air
 execute as @a[scores={ArmorType=1..,ArmorHealth=..-1}] run item replace entity @s armor.chest with air
-execute as @a[scores={ArmorType=1,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with leather_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="II-A_Scout"] 
-execute as @a[scores={ArmorType=2,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with chainmail_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III-A_Raider"]
-execute as @a[scores={ArmorType=3,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with iron_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III-A_Frontline"]
-execute as @a[scores={ArmorType=4,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with netherite_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III_Aegis"]
+execute as @a[scores={ArmorType=1,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with leather_chestplate[custom_model_data=1,unbreakable={},custom_name="II-A_Scout"] 
+execute as @a[scores={ArmorType=2,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with chainmail_chestplate[custom_model_data=1,unbreakable={},custom_name="III-A_Raider"]
+execute as @a[scores={ArmorType=3,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with iron_chestplate[custom_model_data=1,unbreakable={},custom_name="III-A_Frontline"]
+execute as @a[scores={ArmorType=4,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with netherite_chestplate[custom_model_data=1,unbreakable={},custom_name="III_Aegis"]

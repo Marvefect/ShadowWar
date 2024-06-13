@@ -22,7 +22,7 @@ execute as @a[tag=!S.Reloading,nbt={SelectedItemSlot:1},scores={SecondaryWeapon=
 title @a[nbt={SelectedItemSlot:1}] title {"text":""}
 title @a[nbt={SelectedItemSlot:0}] title {"text":""}
 title @a[nbt=!{SelectedItemSlot:1},nbt=!{SelectedItemSlot:0}] clear
-effect give @a saturation infinite 69 true
+#effect give @a saturation infinite 69 true
 effect give @a resistance infinite 4 true
 effect give @a weakness infinite 4 true
 
@@ -35,7 +35,7 @@ execute as @a unless score @s Health matches 1.. run scoreboard players operatio
 # Limbo
 execute in overworld as @a[tag=Banned,distance=..100] if entity @s[distance=..100] in data:limbo run tp @s 0.5 6.5 3.5 
 
-kill @e[type=item]
+#kill @e[type=item]
 
 # test
 
