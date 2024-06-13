@@ -16,9 +16,9 @@ title @a[nbt={SelectedItemSlot:1}] times 0 3 0
 title @a[nbt={SelectedItemSlot:0}] times 0 3 0
 title @a[nbt=!{SelectedItemSlot:1},nbt=!{SelectedItemSlot:0}] times 0 5 0
 execute as @a[tag=P.Reloading,nbt={SelectedItemSlot:0}] run title @s subtitle [{"text": "Reloading!"}]
-execute as @a[tag=!P.Reloading,nbt={SelectedItemSlot:0},scores={PrimaryWeapon=1..},tag=!Spectating] run title @s subtitle [{"score":{"objective": "P.Ammo","name": "@s"}},{"text": "/"},{"score":{"objective": "P.MaxAmmo","name": "@s"}}]
+execute as @a[tag=!P.Reloading,nbt={SelectedItemSlot:0},scores={PrimaryWeapon=1..},tag=!Spectating,tag=!Dev] run title @s subtitle [{"score":{"objective": "P.Ammo","name": "@s"}},{"text": "/"},{"score":{"objective": "P.MaxAmmo","name": "@s"}}]
 execute as @a[tag=S.Reloading,nbt={SelectedItemSlot:1}] run title @s subtitle [{"text": "Reloading!"}]
-execute as @a[tag=!S.Reloading,nbt={SelectedItemSlot:1},scores={SecondaryWeapon=1..},tag=!Spectating] run title @s subtitle [{"score":{"objective": "S.Ammo","name": "@s"}},{"text": "/"},{"score":{"objective": "S.MaxAmmo","name": "@s"}}]
+execute as @a[tag=!S.Reloading,nbt={SelectedItemSlot:1},scores={SecondaryWeapon=1..},tag=!Spectating,tag=!Dev] run title @s subtitle [{"score":{"objective": "S.Ammo","name": "@s"}},{"text": "/"},{"score":{"objective": "S.MaxAmmo","name": "@s"}}]
 title @a[nbt={SelectedItemSlot:1}] title {"text":""}
 title @a[nbt={SelectedItemSlot:0}] title {"text":""}
 title @a[nbt=!{SelectedItemSlot:1},nbt=!{SelectedItemSlot:0}] clear

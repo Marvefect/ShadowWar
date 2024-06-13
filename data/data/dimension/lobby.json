@@ -1,0 +1,14 @@
+{
+    "type": "data:lobby",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "biome": "data:lobby",
+        "lakes": false,
+        "features": false,
+        "layers": [],
+        "structure_overrides": []
+      }
+    }
+  }
+  
