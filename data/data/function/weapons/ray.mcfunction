@@ -1,6 +1,6 @@
 particle minecraft:ash
-execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ if entity @s[dx=1,dy=1,dz=1] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function data:weapons/ray
-execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ unless entity @e[dx=0.75,dy=0.75,dz=0.75,type=!armor_stand,type=!item,type=!item_frame,type=!glow_item_frame,type=!block_display,type=!interaction] positioned ^ ^ ^1 positioned ~ ~1.35 ~ run function data:weapons/ray
+execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ if entity @s[dx=1,dy=1,dz=1] positioned ^ ^ ^1 positioned ~ ~1.35 ~ if entity @a[distance=..50] run function data:weapons/ray
+execute if block ~ ~ ~ air positioned ~ ~-1.35 ~ unless entity @e[dx=0.75,dy=0.75,dz=0.75,type=!armor_stand,type=!item,type=!item_frame,type=!glow_item_frame,type=!block_display,type=!interaction] positioned ^ ^ ^1 positioned ~ ~1.35 ~ if entity @a[distance=..50] run function data:weapons/ray
 
 execute if score @s[nbt={SelectedItemSlot:0},team=Red] PrimaryWeapon matches 1..4 unless entity @s[dx=0.8,dy=0.8,dz=0.8] run scoreboard players operation @p[dx=0.75,dy=0.75,dz=0.75,team=Blue] DamageTaken = @s P.Damage
 execute if score @s[nbt={SelectedItemSlot:1},team=Red] SecondaryWeapon matches 1..3 unless entity @s[dx=0.8,dy=0.8,dz=0.8] run scoreboard players operation @p[dx=0.75,dy=0.75,dz=0.75,team=Blue] DamageTaken = @s S.Damage
