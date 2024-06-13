@@ -26,5 +26,3 @@ execute as @a[scores={ArmorType=1,ArmorHealth=0..},tag=!Spectating] run item rep
 execute as @a[scores={ArmorType=2,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with chainmail_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III-A_Raider"]
 execute as @a[scores={ArmorType=3,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with iron_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III-A_Frontline"]
 execute as @a[scores={ArmorType=4,ArmorHealth=0..},tag=!Spectating] run item replace entity @s armor.chest with netherite_chestplate[minecraft:custom_model_data=1,minecraft:unbreakable={},minecraft:custom_name="III_Aegis"]
-
-execute as @a run scoreboard players operation @s PrevArmorType = @s ArmorType
