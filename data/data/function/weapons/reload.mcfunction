@@ -20,4 +20,4 @@ execute as @a[tag=S.Reloading] run attribute @s generic.movement_speed modifier 
 execute as @a[tag=S.Reloading] if score @s Time = @s S.ReloadTime run attribute @s generic.movement_speed modifier remove 0-0-0-1-1
 execute as @a[tag=S.Reloading] if score @s Time = @s S.ReloadTime run tag @s remove S.Reloading
 
-kill @e[type=item]
+#kill @e[type=item]

@@ -7,6 +7,8 @@ scoreboard objectives add ArmorHealth dummy
 scoreboard objectives add ArmorProt dummy
 scoreboard objectives add DamageTaken dummy
 scoreboard objectives add Jump custom:jump
+scoreboard objectives add Hunger food
+scoreboard objectives add SetHunger dummy
 
 scoreboard objectives add P.Ammo dummy
 scoreboard objectives add P.MaxAmmo dummy
@@ -40,16 +42,14 @@ scoreboard objectives add Motion dummy
 scoreboard objectives add x1 dummy
 scoreboard objectives add y1 dummy
 scoreboard objectives add z1 dummy
+
 scoreboard objectives add Numbers dummy
-
-scoreboard objectives add currY dummy
-scoreboard objectives add lastY dummy
-
 scoreboard players set 100 Numbers 100
 scoreboard players set 180 Numbers 180
 scoreboard players set 90 Numbers 90
 scoreboard players set 45 Numbers 45
 scoreboard players set 2 Numbers 2
+scoreboard players set 1 Numbers 1
 
 bossbar add 1 {"text": "Rounds"}
 
