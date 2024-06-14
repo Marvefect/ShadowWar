@@ -48,6 +48,7 @@ scoreboard players set 100 Numbers 100
 scoreboard players set 180 Numbers 180
 scoreboard players set 90 Numbers 90
 scoreboard players set 45 Numbers 45
+scoreboard players set 6 Numbers 6
 scoreboard players set 2 Numbers 2
 scoreboard players set 1 Numbers 1
 
