@@ -36,6 +36,7 @@ execute as @a unless score @s Health matches 1.. run scoreboard players operatio
 execute in overworld as @a[tag=Banned,distance=..100] if entity @s[distance=..100] in data:limbo run tp @s 0.5 6.5 3.5 
 
 # test
+effect give @a instant_health 1 100 true 
 
 # AC / Force Adventure
 gamemode adventure @a[gamemode=survival]

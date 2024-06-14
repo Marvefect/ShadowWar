@@ -7,7 +7,6 @@ execute in data:map run summon interaction 26.5 1 20.3 {height:2,Tags:[DoorForce
 execute in data:map run summon interaction -15.5 2.0 -2.5 {height:1,width:2.2f,Tags:[Station, StA]}
 execute in data:map run summon interaction 22.5 2.0 -9.5 {height:1,width:2.2f,Tags:[Station, StB]}
 
-execute in data:map run effect give @a[distance=..500] instant_health 1 100 true 
 execute in data:map run setblock -20 3 30 white_concrete
 execute in data:map run setblock -25 3 22 white_concrete
 execute in data:map run setblock 19 3 22 white_concrete
