@@ -35,8 +35,8 @@ scoreboard objectives add RoundWins dummy
 scoreboard objectives add GameWins dummy
 scoreboard objectives add PlayerCount dummy
 scoreboard objectives add GameStatus dummy
-scoreboard objectives add Experience dummy
-scoreboard objectives add Level level
+
+scoreboard objectives add Credits dummy
 
 scoreboard objectives add Motion dummy
 scoreboard objectives add x1 dummy
@@ -54,31 +54,23 @@ scoreboard players set 1 Numbers 1
 
 bossbar add 1 {"text": "Rounds"}
 
-kill @e[type=interaction,tag=Armory]
-execute in overworld run summon interaction 13.0 -59.0 10.5 {Tags:[Primary1,Armory]}
-execute in overworld run summon interaction 13.0 -59.0 12.5 {Tags:[Primary2,Armory]}
-execute in overworld run summon interaction 13.0 -59.0 14.5 {Tags:[Primary3,Armory]}
-execute in overworld run summon interaction 13.0 -59.0 16.5 {Tags:[Primary4,Armory]} 
+kill @e[type=chest_minecart]
+execute in data:lobby run summon chest_minecart 12.75 65 -9 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -11 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in overworld run summon interaction 6.0 -59.0 22.5 {Tags:[Secondary1,Armory]}
-execute in overworld run summon interaction 6.0 -59.0 20.5 {Tags:[Secondary2,Armory]}
-execute in overworld run summon interaction 6.0 -59.0 18.5 {Tags:[Secondary3,Armory]}
-execute in overworld run summon interaction 6.0 -59.0 16.5 {Tags:[Secondary4,Armory]}
+execute in data:lobby run summon chest_minecart 14 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 16 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 18 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 20 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in overworld run summon interaction 2.0 -59.0 22.5 {Tags:[Armor0,Armory]}
-execute in overworld run summon interaction 2.0 -59.0 20.5 {Tags:[Armor1,Armory]}
-execute in overworld run summon interaction 2.0 -59.0 18.5 {Tags:[Armor2,Armory]}
-execute in overworld run summon interaction 2.0 -59.0 16.5 {Tags:[Armor3,Armory]}
-execute in overworld run summon interaction 2.0 -59.0 14.5 {Tags:[Armor4,Armory]}
+execute in data:lobby run summon chest_minecart 24.25 65 -19 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES5"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in overworld run summon interaction 1.0 -59.0 14.5 {Tags:[EqS1N1,Armory]}
-execute in overworld run summon interaction 1.0 -59.0 16.5 {Tags:[EqS1N2,Armory]}
-execute in overworld run summon interaction 1.0 -59.0 18.5 {Tags:[EqS1N3,Armory]}
-execute in overworld run summon interaction 1.0 -59.0 20.5 {Tags:[EqS1N4,Armory]}
-execute in overworld run summon interaction 1.0 -59.0 22.5 {Tags:[EqS1N5,Armory]}
-
-execute in overworld run summon interaction -7.0 -59.0 14.5 {Tags:[EqS2N1,Armory]}
-execute in overworld run summon interaction -7.0 -59.0 16.5 {Tags:[EqS2N2,Armory]}
-execute in overworld run summon interaction -7.0 -59.0 18.5 {Tags:[EqS2N3,Armory]}
-execute in overworld run summon interaction -7.0 -59.0 20.5 {Tags:[EqS2N4,Armory]}
-execute in overworld run summon interaction -7.0 -59.0 22.5 {Tags:[EqS2N5,Armory]}
+execute in data:lobby run summon chest_minecart 20 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 17 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 13 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 10 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
