@@ -35,6 +35,7 @@ scoreboard objectives add RoundWins dummy
 scoreboard objectives add GameWins dummy
 scoreboard objectives add PlayerCount dummy
 scoreboard objectives add GameStatus dummy
+scoreboard objectives add People dummy
 
 scoreboard objectives add Credits dummy
 
@@ -74,3 +75,5 @@ execute in data:lobby run summon chest_minecart 20 64.75 13 {NoGravity:1b,Silent
 execute in data:lobby run summon chest_minecart 17 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS2"],CustomName:'{"text":"III-A RAIDER"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 execute in data:lobby run summon chest_minecart 13 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS3"],CustomName:'{"text":"III-A FRONTLINE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 execute in data:lobby run summon chest_minecart 10 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS4"],CustomName:'{"text":"III AEGIS"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+
+execute in data:lobby run summon chest_minecart 4.5 65.4 11.2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPL"],CustomName:'{"text":"Play!"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}

@@ -129,6 +129,12 @@ execute as @a[tag=AS2] if items entity @s player.cursor *[minecraft:custom_data=
 execute as @a[tag=AS3] if items entity @s player.cursor *[minecraft:custom_data={AS:3}] run scoreboard players set @s ArmorType 3
 execute as @a[tag=AS4] if items entity @s player.cursor *[minecraft:custom_data={AS:4}] run scoreboard players set @s ArmorType 4
 
+# From Match.mcfunction
+execute as @a if items entity @s player.cursor *[minecraft:custom_data={MP:1}] run tag @s remove MP1
+
+execute as @a if items entity @s player.cursor *[minecraft:custom_data={MP:2}] run tag @s add MP1
+
 # meme
 tag @a remove Bought
 execute as @a[tag=!Dev] run item replace entity @s player.cursor with air
+execute as @a[tag=!Dev] run item replace entity @s hotbar.8 with air
