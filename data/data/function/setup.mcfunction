@@ -55,22 +55,22 @@ scoreboard players set 1 Numbers 1
 bossbar add 1 {"text": "Rounds"}
 
 kill @e[type=chest_minecart]
-execute in data:lobby run summon chest_minecart 12.75 65 -9 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 12.75 65 -11 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 12.75 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 12.75 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -9 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS1"],CustomName:'{"text":"F57"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -11 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS2"],CustomName:'{"text":"CH-A"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS3"],CustomName:'{"text":"CBR-C"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 12.75 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mPS4"],CustomName:'{"text":"SAWBLADE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in data:lobby run summon chest_minecart 14 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 16 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 18 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 20 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 14 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS1"],CustomName:'{"text":"UP-9"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 16 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS2"],CustomName:'{"text":"K45"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 18 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS3"],CustomName:'{"text":"S97"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 20 65 -22.25 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mSS4"],CustomName:'{"text":"RAVEN"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in data:lobby run summon chest_minecart 24.25 65 -19 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 24.25 65 -17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 24.25 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 24.25 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES5"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -19 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES2"],CustomName:'{"text":"MED-KIT"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES3"],CustomName:'{"text":"HE GRENADE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -15 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES4"],CustomName:'{"text":"SMOKE GRENADE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 24.25 65 -13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mES5"],CustomName:'{"text":"SHAPED CHARGE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
 
-execute in data:lobby run summon chest_minecart 20 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS1"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 17 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS2"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 13 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS3"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-execute in data:lobby run summon chest_minecart 10 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS4"],CustomName:'{"text":"Armory"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 20 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS1"],CustomName:'{"text":"II-A SCOUT"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 17 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS2"],CustomName:'{"text":"III-A RAIDER"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 13 64.75 17 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS3"],CustomName:'{"text":"III-A FRONTLINE"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
+execute in data:lobby run summon chest_minecart 10 64.75 13 {NoGravity:1b,Silent:1b,Invulnerable:1b,Tags:["mAS4"],CustomName:'{"text":"III AEGIS"}',CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}

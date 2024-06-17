@@ -30,7 +30,7 @@ effect give @a weakness infinite 4 true
 execute as @a unless score @s MaxHealth matches -2147483648..2147483647 run scoreboard players set @s MaxHealth 100
 execute as @a unless score @s Health matches 1.. run scoreboard players operation @s Health = @s MaxHealth
 
-execute in data:lobby positioned 0 64 0 as @a run title @s[distance=..1000] actionbar [{"text": "Credits: ","color":"yellow"},{"score":{"objective":"Credits","name": "@s"}}]
+execute in data:lobby positioned 0 64 0 as @a[tag=!Dev] run title @s[distance=..1000] actionbar [{"text": "Credits: ","color":"yellow"},{"score":{"objective":"Credits","name": "@s"}}]
 # test
 effect give @a instant_health 1 100 true 
 
