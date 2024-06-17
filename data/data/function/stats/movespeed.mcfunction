@@ -1,7 +1,8 @@
 # Jumping Jacks
 execute as @a[scores={Jump=1..,ArmorType=0..2},tag=!Dev] run scoreboard players operation @s SetHunger -= 4 Numbers
 execute as @a[scores={Jump=1..,ArmorType=3..},tag=!Dev] run scoreboard players operation @s SetHunger -= 6 Numbers
-execute as @a[scores={Jump=1..,SetHunger=..5}] at @s run tp @s ~ ~ ~ facing ~ ~-1 ~
+execute as @a[scores={Jump=1..,SetHunger=..5},tag=!Dev] at @s run attribute @s minecraft:generic.jump_strength base set 0
+execute as @a[scores={Jump=1..,SetHunger=6..},tag=!Dev] at @s run attribute @s minecraft:generic.jump_strength base set 0.42
 execute as @a[scores={Jump=1..}] run scoreboard players reset @s Jump
 
 # Delete shit around spawns
