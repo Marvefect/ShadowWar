@@ -22,10 +22,6 @@ scoreboard objectives add S.ReloadTime dummy
 scoreboard objectives add S.Firerate dummy
 scoreboard objectives add S.Damage dummy
 
-scoreboard objectives add Recoil dummy
-scoreboard objectives add RecoilRandom dummy
-scoreboard objectives add RecoilDirec dummy
-
 scoreboard objectives add PrimaryWeapon dummy
 scoreboard objectives add SecondaryWeapon dummy
 scoreboard objectives add EquipmentSlot1 dummy
@@ -49,6 +45,9 @@ scoreboard players set 100 Numbers 100
 scoreboard players set 180 Numbers 180
 scoreboard players set 90 Numbers 90
 scoreboard players set 45 Numbers 45
+scoreboard players set 20 Numbers 20
+scoreboard players set 15 Numbers 15
+scoreboard players set 10 Numbers 10
 scoreboard players set 6 Numbers 6
 scoreboard players set 2 Numbers 2
 scoreboard players set 1 Numbers 1

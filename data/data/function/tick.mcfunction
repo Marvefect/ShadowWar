@@ -1,7 +1,3 @@
-scoreboard players add RecoilTime Time 1
-execute as @a if score RecoilTime Time matches 4 if score @s Recoil matches 1.. run scoreboard players remove @s Recoil 1
-execute if score RecoilTime Time matches 4 run scoreboard players set RecoilTime Time 0
-
 execute as @e[tag=Time] run scoreboard players add @s Time 1
 scoreboard players add Round Time 1
 execute if score Round Time matches 20.. run scoreboard players reset Round Time
@@ -35,4 +31,4 @@ execute in data:lobby positioned 0 64 0 as @a[tag=!Dev] run title @s[distance=..
 effect give @a instant_health 1 100 true 
 
 # AC / Force Adventure
-gamemode adventure @a[gamemode=survival]
+gamemode adventure @a[gamemode=survival,tag=!Dev]

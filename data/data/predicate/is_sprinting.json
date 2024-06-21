@@ -5,6 +5,6 @@
     "flags": {
       "is_sprinting": true
     },
-    "periodic_tick": 20
+    "periodic_tick": 7
   }
 }

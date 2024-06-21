@@ -1,52 +1,51 @@
 # Stats
-execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with iron_hoe[custom_data={PWeapon:1},custom_model_data=11,unbreakable={},custom_name="F57",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={PrimaryWeapon=1},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with iron_hoe[custom_data={PWeapon:1},custom_model_data=1,unbreakable={},custom_name="F57",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.MaxAmmo 30
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Firerate 5
 execute as @a[scores={PrimaryWeapon=1}] run scoreboard players set @s P.Damage 7
 
-execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with diamond_hoe[custom_data={PWeapon:1},custom_model_data=12,unbreakable={},custom_name="CH-A",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={PrimaryWeapon=2},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with diamond_hoe[custom_data={PWeapon:1},custom_model_data=1,unbreakable={},custom_name="CH-A",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.MaxAmmo 5
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.ReloadTime 80
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Firerate 40
 execute as @a[scores={PrimaryWeapon=2}] run scoreboard players set @s P.Damage 65
 
-execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with iron_hoe[custom_data={PWeapon:1},custom_model_data=13,unbreakable={},custom_name="CBR-C",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={PrimaryWeapon=3},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with iron_hoe[custom_data={PWeapon:1},custom_model_data=2,unbreakable={},custom_name="CBR-C",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.MaxAmmo 10
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.ReloadTime 60
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Firerate 10
 execute as @a[scores={PrimaryWeapon=3}] run scoreboard players set @s P.Damage 18
 
-execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with diamond_hoe[custom_data={PWeapon:1},custom_model_data=14,unbreakable={},custom_name="Sawblade",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={PrimaryWeapon=4},tag=!P.Reloading,tag=!Dev] run item replace entity @s hotbar.0 with diamond_hoe[custom_data={PWeapon:1},custom_model_data=2,unbreakable={},custom_name="Sawblade",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.MaxAmmo 100
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.ReloadTime 120
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Firerate 2
 execute as @a[scores={PrimaryWeapon=4}] run scoreboard players set @s P.Damage 4
 
-execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with stone_hoe[custom_data={SWeapon:1},custom_model_data=21,unbreakable={},custom_name="UP9",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={SecondaryWeapon=1},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with stone_hoe[custom_data={SWeapon:1},custom_model_data=1,unbreakable={},custom_name="UP9",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.MaxAmmo 12
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.ReloadTime 50
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Firerate 10
 execute as @a[scores={SecondaryWeapon=1}] run scoreboard players set @s S.Damage 9
 
-execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with stone_hoe[custom_data={SWeapon:1},custom_model_data=22,unbreakable={},custom_name="K45",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={SecondaryWeapon=2},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with stone_hoe[custom_data={SWeapon:1},custom_model_data=2,unbreakable={},custom_name="K45",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.MaxAmmo 8
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.ReloadTime 60
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Firerate 10
 execute as @a[scores={SecondaryWeapon=2}] run scoreboard players set @s S.Damage 11
 
-execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with iron_hoe[custom_data={SWeapon:1},custom_model_data=23,unbreakable={},custom_name="S97",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={SecondaryWeapon=3},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with iron_hoe[custom_data={SWeapon:1},custom_model_data=3,unbreakable={},custom_name="S97",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.MaxAmmo 30
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.ReloadTime 50
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Firerate 4
 execute as @a[scores={SecondaryWeapon=3}] run scoreboard players set @s S.Damage 4
 
-execute as @a[scores={SecondaryWeapon=4},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with golden_hoe[custom_data={SWeapon:1},custom_model_data=24,unbreakable={},custom_name="Raven",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
+execute as @a[scores={SecondaryWeapon=4},tag=!S.Reloading,tag=!Dev] run item replace entity @s hotbar.1 with golden_hoe[custom_data={SWeapon:1},custom_model_data=1,unbreakable={},custom_name="Raven",food={eat_seconds:1000000,saturation:0,nutrition:0,can_always_eat:true}] 1
 execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.MaxAmmo 8
 execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.ReloadTime 60
 execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.Firerate 25
 execute as @a[scores={SecondaryWeapon=4}] run scoreboard players set @s S.Damage 30
-
 # Code
 
 execute as @a unless score @s PrimaryWeapon matches 1.. run scoreboard players set @s PrimaryWeapon 1
